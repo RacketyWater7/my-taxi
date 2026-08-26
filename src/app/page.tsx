@@ -136,7 +136,7 @@ export default function HomePage() {
                       </p>
                     </div>
                     <Image
-                      src="/inc/img/logo_taxi70.png"
+                      src="/inc/img/logo_taxi70.webp"
                       alt=""
                       width={70}
                       height={26}

@@ -30,7 +30,7 @@ export function Footer() {
           {/* Brand column */}
           <div className="lg:col-span-5">
             <Image
-              src="/inc/img/logo_taxi70.png"
+              src="/inc/img/logo_taxi70.webp"
               alt="Taxi 70"
               width={130}
               height={48}

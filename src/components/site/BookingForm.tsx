@@ -97,9 +97,11 @@ export function BookingForm() {
     if (!state.from.trim()) e.from = 'Bitte Abholort angeben.';
     if (!state.to.trim()) e.to = 'Bitte Zielort angeben.';
     if (!state.name.trim()) e.name = 'Bitte Name angeben.';
-    if (!state.email.trim()) e.email = 'Bitte E-Mail angeben.';
-    if (!/^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$/.test(state.email.trim()))
+    if (!state.email.trim()) {
+      e.email = 'Bitte E-Mail angeben.';
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(state.email.trim())) {
       e.email = 'Bitte gültige E-Mail angeben.';
+    }
     if (!state.phone.trim()) e.phone = 'Bitte Telefonnummer angeben.';
     if (!state.dsgvo) e.dsgvo = 'Bitte Datenschutz akzeptieren.';
     return e;
@@ -290,12 +292,12 @@ export function BookingForm() {
         <div className="flex flex-wrap gap-6">
           <Checkbox
             checked={state.wheelchair}
-            onChange={() => setState((s) => ({ ...s, wheelchair: !s.wheelchair }))}
+            onChange={(e) => setState((s) => ({ ...s, wheelchair: e.target.checked }))}
             label="Rollstuhltransport"
           />
           <Checkbox
             checked={state.childSeat}
-            onChange={() => setState((s) => ({ ...s, childSeat: !s.childSeat }))}
+            onChange={(e) => setState((s) => ({ ...s, childSeat: e.target.checked }))}
             label="Kindersitz benötigt"
           />
         </div>
@@ -323,7 +325,7 @@ export function BookingForm() {
       {/* Privacy */}
       <Checkbox
         checked={state.dsgvo}
-        onChange={() => setState((s) => ({ ...s, dsgvo: !s.dsgvo }))}
+        onChange={(e) => setState((s) => ({ ...s, dsgvo: e.target.checked }))}
         required
         error={errors.dsgvo}
         label={

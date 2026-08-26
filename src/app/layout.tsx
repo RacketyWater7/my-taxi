@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: '#FFD700',
+  themeColor: '#F2E12D',
 };
 
 export default function RootLayout({
@@ -40,7 +40,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de">
-      <body className="min-h-dvh bg-surface-light text-night-800 antialiased">
+      <body className="min-h-dvh bg-white text-taxi-black antialiased">
         <Script
           id="org-ld-json"
           type="application/ld+json"
@@ -76,13 +76,12 @@ export default function RootLayout({
           }}
         />
         <MotionProvider>
-          <div className="relative flex min-h-dvh flex-col">
-            <Header />
-            <main className="flex-1">{children}</main>
-            <Footer />
-          </div>
+          <Header />
+          <main className="min-h-[calc(100dvh-64px)]">{children}</main>
+          <Footer />
         </MotionProvider>
       </body>
     </html>
   );
 }
+

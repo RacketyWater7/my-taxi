@@ -55,15 +55,15 @@ export default function TransportPage() {
 
               <div className="mt-6 space-y-4 text-lg text-night-700 leading-relaxed font-medium">
                 <p>
-                  Manchmal muss es eben schnell gehen und wir sind zur Stelle. Wir
+            Manchmal muss es eben schnell gehen und wir sind zur Stelle. Wir
                   fahren „fast" alles was in unsere Fahrzeuge passt. Ob Dokumente die
-                  schnell an einen Geschäftspartner überbracht werden sollen bis hin
-                  zur Tasche für Ihre Großmutter die ins Krankenhaus gebracht werden
-                  soll.
-                </p>
-                <p>
-                  Wir dürfen behaupten, dass die Transporte mit Taxi70 schnell,
-                  zuverlässig und professionell ablaufen. Unser freundliches Team ist
+            schnell an einen Geschäftspartner überbracht werden sollen bis hin
+            zur Tasche für Ihre Großmutter die ins Krankenhaus gebracht werden
+            soll.
+          </p>
+          <p>
+            Wir dürfen behaupten, dass die Transporte mit Taxi70 schnell,
+            zuverlässig und professionell ablaufen. Unser freundliches Team ist
                   in und um Münster flexibel einsetzbar.
                 </p>
               </div>
@@ -136,7 +136,7 @@ export default function TransportPage() {
                         Wir bitten um Verständnis, dass wir keine Umzüge durchführen
                         können. Für größere Umzüge wenden Sie sich bitte an spezialisierte
                         Unternehmen.
-                      </p>
+          </p>
                     </div>
                   </div>
                 </div>
