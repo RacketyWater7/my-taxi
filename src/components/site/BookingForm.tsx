@@ -198,7 +198,7 @@ export function BookingForm() {
           type="text"
           value={state.date}
           onChange={(e) => setState((s) => ({ ...s, date: e.target.value }))}
-          placeholder={todayDE()}
+          placeholder="TT.MM.JJJJ"
           inputMode="numeric"
           required
           error={errors.date}
@@ -208,7 +208,7 @@ export function BookingForm() {
           type="text"
           value={state.time}
           onChange={(e) => setState((s) => ({ ...s, time: e.target.value }))}
-          placeholder={nowHHMM()}
+          placeholder="HH:MM"
           inputMode="numeric"
           required
           error={errors.time}

@@ -35,8 +35,6 @@ export default function TransportPage() {
       <PageHero
         title="Transport"
         subtitle="Wir über­nehm­­en Ihre Trans­porte – schnell, zuverlässig und professionell."
-        icon="📦"
-        image="/inc/img/hero/maik-winnecke-Epm5HX_Iwzs-unsplash.jpg"
       />
 
       <section className="py-16 lg:py-24 bg-gradient-to-b from-surface-light to-surface-cream">
